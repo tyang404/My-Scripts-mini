@@ -1,0 +1,177 @@
+Program Version,EnergyPlus, Version 9.5.0-de239b2e5f, YMD=2022.10.11 11:39,
+   ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
+   **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** CalculateZoneVolume: The Zone="LIVING_UNIT1" is not fully enclosed. To be fully enclosed, each edge of a surface must also be an edge on one other surface.
+   **   ~~~   **   The zone volume was calculated using the opposite wall area times the distance between them method 
+   **   ~~~   **   The surface    "WALL_LDF_1.UNIT1" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 12.1331, 0.0000, 2.6016}
+   **   ~~~   **     Vertex end   { 0.0000, 0.0000, 2.6016}
+   **   ~~~   **   The surface    "WALL_SDR_1.UNIT1" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 12.1331, 9.0998, 2.6016}
+   **   ~~~   **     Vertex end   { 12.1331, 0.0000, 2.6016}
+   **   ~~~   **   The surface    "WALL_LDB_1.UNIT1" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 0.0000, 9.0998, 2.6016}
+   **   ~~~   **     Vertex end   { 12.1331, 9.0998, 2.6016}
+   **   ~~~   **   The surface    "WALL_SDL_1.UNIT1" has an edge that is either not an edge on another surface or is an edge on three or more surfaces: 
+   **   ~~~   **     Vertex start { 0.0000, 0.0000, 2.6016}
+   **   ~~~   **     Vertex end   { 0.0000, 9.0998, 2.6016}
+   ** Warning ** CheckUsedConstructions: There are 14 nominally unused constructions in input.
+   **   ~~~   ** Each Unused construction is shown.
+   ************* Construction=CEILING-FLOOR-LAYER
+   ************* Construction=EXTERIOR FLOOR
+   ************* Construction=ATTIC FLOOR
+   ************* Construction=FNDN_ROOF
+   ************* Construction=INTERIORWALL
+   ************* Construction=INTERIOR WALL
+   ************* Construction=INTERIOR WINDOW
+   ************* Construction=INTERIOR DOOR
+   ************* Construction=CRAWL_FLOOR
+   ************* Construction=INSULATED PIPE
+   ************* Construction=PLAIN PIPE
+   ************* Construction=TDD PIPE
+   ************* Construction=TDD DOME
+   ************* Construction=TDD DIFFUSER
+   ** Warning ** GetAirflowNetworkInput: AirflowNetwork:SimulationControl object, 
+   **   ~~~   ** ..Specified AirflowNetwork Control = "MultizoneWithDistribution" and ZoneVentilation:* objects are present.
+   **   ~~~   ** ..ZoneVentilation objects will not be simulated.
+   ************* Beginning System Sizing Calculations
+   ************* SizeDXCoil: Potential issue with equipment sizing for Coil:Cooling:DX:SingleSpeed DX COOLING COIL_UNIT1
+   **   ~~~   ** User-Specified Gross Rated Total Cooling Capacity [W] = 11282.47000
+   **   ~~~   ** differs from Design Size Gross Rated Total Cooling Capacity [W] = 7094.51696
+   **   ~~~   ** This may, or may not, indicate mismatched component sizes.
+   **   ~~~   ** Verify that the value entered is intended and is consistent with other components.
+   ** Warning ** The Standard Ratings is calculated for Coil:Cooling:DX:SingleSpeed = DX COOLING COIL_UNIT1 but not at the AHRI test condition due to curve out of bound.
+   **   ~~~   **  Review the Standard Ratings calculations in the Engineering Reference for this coil type. Also, use Output:Diagnostics, DisplayExtraWarnings for further guidance.
+   **   ~~~   ** CheckCurveLimitsForStandardRatings: The max and/or min limits specified in the corresponding curve objects
+   **   ~~~   **  do not include the AHRI test conditions required to calculate one or more of the Standard Rating values.
+   **   ~~~   ** Coil:Cooling:DX:SingleSpeed=DX COOLING COIL_UNIT1:  Integrated Energy Efficiency Ratio (IEER) calculated is not at the AHRI test condition.
+   **   ~~~   **  Check limits in Total Cooling Capacity Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = HPACCOOLCAPFT
+   **   ~~~   **  Check limits in EIR Function of Temperature Curve, Curve Type = Curve:Biquadratic, Curve Name = HPACCOOLEIRFT
+   ** Warning ** Sizing: Coil:Cooling:DX:SingleSpeed "DX COOLING COIL_UNIT1": Rated air volume flow rate per watt of rated total cooling capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[2.784E-005], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input Output Reference Manual for valid range.
+   ** Warning ** Sizing: Coil:Heating:DX:SingleSpeed MAIN DX HEATING COIL_UNIT1: Rated air volume flow rate per watt of rated total heating capacity is out of range.
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[2.784E-005], Max Rated Vol Flow Per Watt=[6.041E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Coil:WaterHeating:AirToWaterHeatPump:Wrapped "HEAT PUMP WATER HEATER EVAPORATOR_UNIT1": Rated air volume flow rate per watt of rated total water heating capacity is out of range
+   **   ~~~   ** Min Rated Vol Flow Per Watt=[4.027E-005], Rated Vol Flow Per Watt=[1.260E-004], Max Rated Vol Flow Per Watt=[8.056E-005]. See Input-Output Reference Manual for valid range.
+   ** Warning ** Water heater = WATER HEATER_TANK_UNIT1:  Recovery Efficiency and Energy Factor could not be calculated during the test for standard ratings
+   **   ~~~   ** Setpoint was never recovered and/or heater never turned on
+   ** Warning ** Check input. Pump nominal power or motor efficiency is set to 0, for pump=MAINS PRESSURE_UNIT1
+   ** Warning ** ValidateDistributionSystem: Heat pump water heater is simulated along with an AirflowNetwork but is not included in the AirflowNetwork.
+   ** Warning ** ValidateDistributionSystem: A ZoneHVAC:EnergyRecoveryVentilator is simulated along with an AirflowNetwork but is not included in the AirflowNetwork.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ** Warning ** The following lines are "Unused Objects".  These objects are in the input
+   **   ~~~   **  file but are never obtained by the simulation and therefore are NOT used.
+   **   ~~~   **  Each unused object is shown.
+   **   ~~~   **  See InputOutputReference document for more details.
+   ************* Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 1
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 10
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 11
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 12
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 13
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 14
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 15
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 16
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 17
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 2
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 3
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 4
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 5
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 6
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 7
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 8
+   **   ~~~   ** Object=ExternalInterface:FunctionalMockupUnitExport:From:Variable=ExternalInterface:FunctionalMockupUnitExport:From:Variable 9
+   ** Warning ** The following schedule names are "Unused Schedules".  These schedules are in the idf
+   **   ~~~   **  file but are never obtained by the simulation and therefore are NOT used.
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=INTERIORLIGHTINGHE_OS
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=INTERIORLIGHTINGHE_VS
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=DHW_SCH
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SINKS
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SHOWERS
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=BATHS
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=DHWDIST
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SHADING_2009IECC
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=DHW_SETPT
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SUPPLY-AIR-TEMP-SCH
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=HEATING_SCH_HREF
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=COOLING_SCH_HREF
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=HEATING_SCH_R
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=COOLING_SCH_R
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SINKSENSSCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SINKLATSCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SHOWERSENSSCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=SHOWERLATSCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=BATHSENSSCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=BATHLATSCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=WATERHEATERSP1SCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=WATERHEATERSP2SCHEDULE
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=BOILER_SETPT
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=DOASHIGHTEMP
+   ************* Schedule:Year or Schedule:Compact or Schedule:File or Schedule:Constant=DOASLOWTEMP
+   ** Warning ** The following week schedule names are "Unused Schedules".  These schedules are in the idf
+   **   ~~~   **  file but are never obtained by the simulation and therefore are NOT used.
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=DHW_PROFILE_WEEK
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=SINKSWEEK
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=SHOWERSWEEK
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=BATHSWEEK
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=DHWDISTWEEK
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=LIGHTINGPROFILEWEEK_EELIGHTING_INTERIOR_CONTROLS
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=LIGHTINGPROFILEWEEK_EELIGHTING_GARAGE_CONTROLS
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=SINKSENSSCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=SINKLATSCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=SHOWERSENSSCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=SHOWERLATSCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=BATHSENSSCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=BATHLATSCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=WATERHEATERSP1SCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=WATERHEATERSP2SCHEDULE_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=BOILER_SETPT_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=DOASHIGHTEMP_wk_
+   ************* Schedule:Week:Daily or Schedule:Week:Compact=DOASLOWTEMP_wk_
+   ** Warning ** The following day schedule names are "Unused Schedules".  These schedules are in the idf
+   **   ~~~   **  file but are never obtained by the simulation and therefore are NOT used.
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=LIGHTINGDAY_EELIGHTING_OCCSENSORS
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=LIGHTINGDAY_EELIGHTING_GARAGE_OCCSENSORS
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=DHW_PROFILE_DAY
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SINKSWEEKDAY
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SINKSWEEKEND
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SINKSVACATION
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SHOWERSWEEKDAY
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SHOWERSWEEKEND
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SHOWERSVACATION
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=BATHSWEEKDAY
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=BATHSWEEKEND
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=BATHSVACATION
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=DHWDISTDAY
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=WINTERLOADDAY
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SUMMERLOADDAY
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SINKSENSSCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SINKLATSCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SHOWERSENSSCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=SHOWERLATSCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=BATHSENSSCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=BATHLATSCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=WATERHEATERSP1SCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=WATERHEATERSP2SCHEDULE_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=BOILER_SETPT_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=DOASHIGHTEMP_dy_
+   ************* Schedule:Day:Hourly or Schedule:Day:Interval or Schedule:Day:List=DOASLOWTEMP_dy_
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 3 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 16 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  6.99sec

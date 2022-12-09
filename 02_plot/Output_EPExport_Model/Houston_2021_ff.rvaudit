@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:.\Houston_2021_ff.rvi
+ input file:Houston_2021_ff.eso
+ output file:Houston_2021_ff.csv
+ getting all vars from:Houston_2021_ff.eso
+  number variables requested for output=          37
+ ReadVars Run Time=00hr 00min  0.05sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:.\Houston_2021_ff.mvi
+ input file:Houston_2021_ff.mtr
+ output file:Houston_2021_ffMeter.csv
+ getting all vars from:Houston_2021_ff.mtr
+  number variables requested for output=           3
+ ReadVars Run Time=00hr 00min  0.02sec
+ ReadVarsESO program completed successfully.
